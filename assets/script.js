@@ -5,6 +5,6 @@ const image = new Image();
 image.onload = function () {
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 };
-image.src = img;
 
+image.src = img;
 console.log(img);

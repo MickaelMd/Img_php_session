@@ -1,10 +1,5 @@
 <?php 
 
-// ini_set('session.gc_maxlifetime', 10);
-// ini_set("session.cookie_lifetime", 10);
-// setcookie(session_name(), '', time() - 256, '/');
-// session_start();
-
 $inactive = 256; 
 ini_set('session.gc_maxlifetime', $inactive); 
 
