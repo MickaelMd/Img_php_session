@@ -1,0 +1,15 @@
+
+
+    $inactive = 256; 
+    ini_set('session.gc_maxlifetime', $inactive); 
+
+    // Définis un temps en secondes  
+
+    session_start();
+
+    if (isset($_SESSION['time_session']) && (time() - $_SESSION['time_session'] > $inactive)) { 
+    Regarde l'heure de la dernière requête et si c'est plus que $inactive, alors on détruit la session  
+    session_unset(); 
+    session_destroy();
+    }
+    $_SESSION['time_session'] = time();

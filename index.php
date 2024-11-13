@@ -25,27 +25,6 @@
         </form>
     </section>
 
-    <section id="info">
-
-        <p>$inactive = 256; </br>
-            ini_set('session.gc_maxlifetime', $inactive);</br> </br>
-
-            <span class="comment"> Définis un temps en secondes </span> </br> </br>
-
-            session_start();</br>
-
-            if (isset($_SESSION['time_session']) && (time() - $_SESSION['time_session'] > $inactive)) {</br> </br>
-            <span class="comment"> Regarde l'heure de la dernière requête et si c'est plus que $inactive, alors on
-                détruit
-                la session </span> </br> </br>
-            session_unset(); </br>
-            session_destroy();
-            }</br>
-            $_SESSION['time_session'] = time();
-        </p>
-
-    </section>
-
 
 </body>
 
