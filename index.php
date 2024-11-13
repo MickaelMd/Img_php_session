@@ -12,7 +12,22 @@
 <body>
     <section id="main_section">
 
-        <img id="img" src="<?=$img?>" />
+        <img style="display:none;" id="img" src="<?=$img?>" />
+
+        <canvas id="myCanvas" style="border:1px solid grey;">
+            Sorry, your browser does not support canvas.
+        </canvas>
+
+        <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        const image = document.getElementById("img");
+
+        image.addEventListener("load", (e) => {
+            ctx.drawImage(image, 0, 0);
+        });
+        </script>
+
         <form action="" method="POST" enctype="multipart/form-data">
             <input id="img_btn" type="file" name="img_session" required>
             <button type="submit" name="load">Charger l'image</button>
