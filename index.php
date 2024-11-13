@@ -1,4 +1,4 @@
-<?php require "script.php";?>
+<?php require "assets/script.php";?>
 <!DOCTYPE html>
 <html lang="fr">
 <script>
@@ -8,8 +8,8 @@ let img = "<?= $img ?>";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
     <title>Document</title>
 </head>
 

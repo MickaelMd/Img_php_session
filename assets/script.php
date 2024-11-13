@@ -51,5 +51,5 @@ if (isset($_POST['refresh'])) {
 if(isset($_SESSION['img_session'])) {
     $img = $_SESSION['img_session'];
 } else {
-    $img = 'img.jpg';
+    $img = 'assets/img.jpg';
 }
