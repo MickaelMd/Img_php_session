@@ -41,6 +41,18 @@ body {
 #main_section button:hover {
   background-color: rgba(112, 133, 255, 0.527);
   transition: 150ms;
+  color: #fff;
+  box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
 #info {
